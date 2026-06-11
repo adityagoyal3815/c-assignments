@@ -1,3 +1,9 @@
+/* 
+Extend atof to handle scientific notation of the form 123	.45e-6 where a floating-point number may be followed by e or E and an optionally signed exponent
+Sample test case : 
+Format : (<input>, <expected_output>, <explanantion>)
+1. ("123.45e-6", 0.00012345, "Basic scientific notation with a negative exponent") */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

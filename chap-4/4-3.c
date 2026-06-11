@@ -1,3 +1,8 @@
+/*
+
+Given the basic framework, it's straightforward to write the calculator. Implement a calculator with basic arithmetic operations supported. Add the modulus ( % ) operator and provisions for negative numbers.*/
+
+
 #include <stdio.h>
 #include <string.h>
 int add(int a, int b) { return a + b; }

@@ -1,3 +1,13 @@
+// Write a function escape(s,t) that converts characters like newline and tab into visible escape sequences like \n and \t as it copies the string t to s Use a switch .
+// Sample test cases :
+// 1.  	Input/s (s,t): ["", "\t"]
+// 	"output": "\\t"
+// 	"explanation": "Convert tab to \\t"
+// 2. 	Input/s (s,t):["", "a\nb"]
+// "output": "a\\nb"
+// "explanation": "Multiple characters with newline"
+
+
 #include<stdio.h>
 void escape(char s[], char t[]){
     int i,j;

@@ -1,3 +1,10 @@
+/*Write the function itob(n,b,s) that converts the integer n into a base b character representation in the string s . In particular, itob(n,16,s) formats n as a hexadecimal integer in s .
+Sample test case : 
+Format : (n, b, s, <explanation>) where n, b are inputs and s is expected output
+1. (42, 10, "42", "Convert positive integer to decimal")
+2. (255, 16, "FF", "Convert 255 to hexadecimal")*/
+
+
 #include <stdio.h>
 #include <string.h>
 

@@ -1,34 +1,21 @@
+// Write a recursive version of the function reverse(s), which reverses the string s in place.
+
+
 #include <stdio.h>
 #include <string.h>
-static int i;
 
-void itoa_recursive(int n, char s[]) {
-  if (n / 10) {
-    itoa_recursive(n / 10, s);
-  } else {
-    i = 0; 
-    if (n < 0) {
-      s[i++] = '-';
-    }
-  }
-
-  int digit = n % 10;
-  if (digit < 0) {
-    digit = -digit;
-  }
-
-  s[i++] = digit + '0';
-  s[i] = '\0'; 
+void reverse(char s[], int start, int end) {
+  if (start >= end)
+    return;
+  reverse(s, start + 1, end - 1);
+  char c = s[start];
+  s[start] = s[end];
+  s[end] = c;
 }
 
 int main() {
-  char s[100];
-
-  itoa_recursive(12345, s);
-  printf("Result: %s\n", s);
-
-  itoa_recursive(-12345, s);
-  printf("Result: %s\n", s);
-
+  char s[] = "level kayak level";
+  reverse(s, 0, strlen(s) - 1);
+  printf("%s\n", s);
   return 0;
 }

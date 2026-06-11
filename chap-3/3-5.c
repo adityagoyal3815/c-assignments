@@ -1,3 +1,11 @@
+/*
+Write a version of iota that accepts three arguments instead of two. The third argument is a minimum field width, the converted number must be padded with blanks on the left if necessary to make it wide enough.
+(Refer book to check the two argument version of iota function)
+Sample test case : 
+Format : (arg1, arg2, arg3, <expected_output>, <explanation>)
+1. (0, 10, 5, "    0", "Convert zero to decimal with a minimum field width of 5")
+*/
+
 #include <stdio.h>
 #include <string.h>
 

@@ -1,3 +1,5 @@
+//write binary search with just one check inside the loop (3-1.c)
+
 #include<stdio.h>
 int binsearch(int x, int v[], int n){
     int low, high, mid;
